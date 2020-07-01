@@ -1,0 +1,188 @@
+/*
+Theme Name: Moters Ltd
+Theme URI: https://ashrafuloli.com/theme/wp/moters-ltd
+Author: Ashraful Oli
+Author URI: https://ashrafuloli.com/
+Description: Theme is a Custom WordPress Theme .
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: moters-ltd
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.site-logo img {
+    height: 160px;
+	width: 250px;
+}
+
+#wp-megamenu-main-menu>.wpmm-nav-wrap>ul.wp-megamenu>li.wpmm_mega_menu>.wpmm-strees-row-and-content-container>ul.wp-megamenu-sub-menu {
+	border-top: 2px solid #11006f;
+}
+
+#wp-megamenu-main-menu>.wpmm-nav-wrap .wp-megamenu>li .wpmm-strees-row-and-content-container>ul.wp-megamenu-sub-menu li.wpmm-type-widget>a {
+	background: #222;
+	color: #fff !important;
+	padding: 5px 15px;
+}
+
+#wp-megamenu-main-menu>.wpmm-nav-wrap .wp-megamenu>li .wpmm-strees-row-and-content-container>ul.wp-megamenu-sub-menu li.wpmm-type-widget:hover>a {
+	background: #11006f;
+	color: #fff !important;
+}
+
+#wp-megamenu-main-menu>.wpmm-nav-wrap ul.wp-megamenu>li.wpmm_dropdown_menu ul.wp-megamenu-sub-menu {
+	border-top: 2px solid #11006f;
+}
+
+.about-text{
+	background: #fff;
+	padding: 30px;
+	box-shadow: 10px 10px 72px 5px #ddd;
+	border-radius: 10px;
+}
+
+.submit-wrap {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.submit-wrap input {
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 14px 40px 14px 30px;
+	background: #11006f;
+	border: 1px solid #11006f;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-family: "Signika", sans-serif;
+	transition: all 0.3s;
+}
+
+.submit-wrap i {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 12px;
+	margin-top: -2px;
+	transition: all 0.3s;
+}
+
+span.ajax-loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+
+.submit-wrap:hover input {
+	background: #fff;
+	color: #11006f;
+}
+
+.submit-wrap:hover i {
+	color: #11006f;
+}
+
+.fal, .far {
+	font-family: "Font Awesome 5 Pro" !important;
+}
+
+.about-area{
+	background:none !important;
+}
+
+
+.widget-wrap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.widget-wrap ul li {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.widget-wrap ul li:hover a {
+  color: #222;
+}
+.widget-wrap ul li:hover:before {
+  margin-right: 13px;
+}
+.widget-wrap ul li a {
+  color: #09316f;
+  margin-right: 10px;
+}
+
+.header-info span {
+    text-align: left;
+}
+
+.header-info span:first-child {
+    font-size: 18px;
+}
+.about-text p {
+    font-size: 15px;
+    text-align: justify;
+}
+.choose-tab-contents p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+.brand-slider button.owl-prev {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px !important;
+}
+
+.brand-slider button.owl-next {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px !important;
+}
+
+.single-brand .brand-wrap{
+    height: auto;
+}
+
+
+ @media (min-width: 992px) and (max-width: 1200px) {
+    .brand-slider button.owl-prev{
+        display none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .brand-slider button.owl-prev{
+        display none;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-slider button.owl-prev{
+        display none;
+    }
+}
+
+.header-gallery {
+    display: inline-block;
+    margin: 0 10px;
+}

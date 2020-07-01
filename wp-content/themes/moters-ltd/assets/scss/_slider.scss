@@ -1,0 +1,168 @@
+.home-slider {
+	.single-slide {
+		padding: 260px 0 290px;
+		display: flex;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+		@include mq(xl){
+			padding: 230px 0 250px;
+		}
+
+		@include mq(xs){
+			padding: 150px 0 180px;
+		}
+
+		&:before {
+			content: "";
+			background: #222;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity: 0.6;
+		}
+
+		.slider-text {
+			@include mq(xl){
+				padding-left: 100px;
+			}
+			h2 {
+				font-size: 48px;
+				color: #fff;
+				margin-bottom: 20px;
+				font-family: $Signika;
+				text-transform: uppercase;
+				@include mq(xl){
+					font-size: 40px;
+				}
+				@include mq(lg){
+					font-size: 40px;
+				}
+				@include mq(md){
+					font-size: 40px;
+				}
+
+				@include mq(xs){
+					font-size: 24px;
+					line-height: 40px;
+				}
+
+				span {
+					color: #dc3545;
+				}
+			}
+
+			p {
+				color: #fff;
+				margin-bottom: 0;
+				font-size: 16px;
+				line-height: 30px;
+				padding-right: 150px;
+				@include mq(xs){
+					padding-right: 0;
+				}
+			}
+
+			.read-more {
+				a {
+					display: inline-block;
+					color: $theme-color;
+					font-size: 14px;
+					padding: 14px 30px;
+					background: #fff;
+					border-radius: 30px;
+					text-transform: uppercase;
+					margin-top: 30px;
+					font-family: $Signika;
+
+					i {
+						margin-left: 5px;
+						@include transition(0.3s);
+					}
+
+					&:hover {
+						background: $theme-color;
+						color: #fff;
+
+						i {
+							margin-left: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.owl-dots {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		.owl-dot {
+			width: 15px;
+			height: 15px;
+			margin-right: 10px;
+			border-radius: 50%;
+			background: #fff !important;
+		}
+
+		.owl-dot.active {
+			background: $theme-color !important;
+		}
+	}
+
+	button.owl-prev {
+		left: 50px;
+		font-size: 40px !important;
+		color: #fff !important;
+		z-index: 99;
+		border-radius: 50%;
+		@include transition(0.3s);
+		transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		background: none !important;
+
+		@include mq(md) {
+			display: none;
+		}
+		@include mq(xs) {
+			display: none;
+		}
+
+		&:hover {
+			color: $theme-color !important;
+		}
+	}
+
+	button.owl-next {
+		right: 50px;
+		font-size: 40px !important;
+		color: #fff !important;
+		border-radius: 50%;
+		z-index: 99;
+		@include transition(0.3s);
+		transform: translateY(-50%);
+		position: absolute;
+		top: 50%;
+		background: none !important;
+
+		@include mq(md) {
+			display: none;
+		}
+		@include mq(xs) {
+			display: none;
+		}
+
+		&:hover {
+			color: $theme-color !important;
+		}
+	}
+}

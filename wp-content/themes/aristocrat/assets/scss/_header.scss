@@ -1,0 +1,234 @@
+.header-top {
+	padding: 5px;
+	background: #656565;
+}
+
+.head-info {
+	display: inline-block;
+	margin-right: 20px;
+
+	a {
+		color: #fff;
+		font-family: $Overpass;
+
+		i {
+			margin-right: 5px;
+		}
+	}
+}
+
+.menu-area {
+	background: #222529;
+	@include mq(lg){
+		padding: 10px 0;
+	}
+	@include mq(md){
+		padding: 10px 0;
+	}
+	@include mq(xs){
+		padding: 10px 0;
+	}
+}
+
+.main-menu {
+	@include mq(lg) {
+		display: none;
+	}
+	@include mq(md) {
+		display: none;
+	}
+	@include mq(xs) {
+		display: none;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin-left: 40px;
+			position: relative;
+
+			&:hover {
+				a {
+					color: $theme-color;
+
+					&:before {
+						width: 100%;
+						background: $theme-color;
+					}
+				}
+
+				ul.sub-menu {
+					visibility: visible;
+					opacity: 1;
+					top: 100%;
+				}
+			}
+
+			a {
+				display: block;
+				color: #fff;
+				padding: 30px 10px;
+				position: relative;
+				font-family: $Overpass;
+
+				&:before {
+					content: "";
+					width: 0;
+					height: 2px;
+					background: #fff;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transform: translateY(-50%);
+					@include transition(0.3s);
+				}
+			}
+
+			ul.sub-menu {
+				border-top: 2px solid $theme-color;
+				position: absolute;
+				left: 0;
+				top: 110%;
+				width: 220px;
+				background: #fff;
+				box-shadow: 0 15px 30px 0 rgba(0, 3, 143, 0.1);
+				text-align: left;
+				padding: 5px 0;
+				z-index: 999;
+				visibility: hidden;
+				opacity: 0;
+				@include transition(0.3s);
+
+				li {
+					display: block;
+					margin: 0;
+
+					a {
+						padding: 8px 30px;
+						text-transform: capitalize;
+						position: relative;
+						color: #222529;
+						font-size: 14px;
+
+						&:hover {
+							color: $theme-color;
+						}
+
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.social-icon {
+	text-align: right;
+
+	a {
+		width: 30px;
+		height: 30px;
+		line-height: 32px;
+		font-size: 12px;
+		color: #fff;
+		background: $theme-color;
+		text-align: center;
+		margin-top: 5px;
+		display: inline-block;
+		border-radius: 50%;
+		margin-left: 10px;
+		box-shadow: 0px 0 10px 0px rgba(255, 255, 255, 0.5);
+
+		&:hover {
+			color: $theme-color;
+			background: #fff;
+		}
+	}
+
+	.facebook {
+		background: #37538d;
+	}
+
+	.twitter {
+		background: #47a5ed;
+	}
+
+	.pinterest {
+		background: #be1e24;
+	}
+
+	.instagram {
+		background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), -webkit-gradient(linear, left top, left bottom, from(#6559ca), color-stop(30%, #bc318f), color-stop(50%, #e33f5f), color-stop(70%, #f77638), to(#fec66d));
+		background: -o-radial-gradient(35% 90%, circle farthest-corner, #fec564, transparent 50%), -o-radial-gradient(0 140%, circle farthest-corner, #fec564, transparent 50%), -o-radial-gradient(0 -25%, ellipse farthest-corner, #5258cf, transparent 50%), -o-radial-gradient(20% -50%, ellipse farthest-corner, #5258cf, transparent 50%), -o-radial-gradient(100% 0, ellipse farthest-corner, #893dc2, transparent 50%), -o-radial-gradient(60% -20%, ellipse farthest-corner, #893dc2, transparent 50%), -o-radial-gradient(100% 100%, ellipse farthest-corner, #d9317a, transparent), -o-linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+		background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+	}
+}
+
+.hamburger-menu {
+	display: none;
+	@include mq(lg) {
+		display: inline-block;
+	}
+	@include mq(md) {
+		display: inline-block;
+	}
+	@include mq(xs) {
+		display: inline-block;
+	}
+
+	a {
+		display: inline-block;
+		width: 50px;
+		background: #fff;
+		height: 50px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 48px;
+
+		svg {
+			path {
+				fill: $theme-color;
+			}
+		}
+
+		&:hover {
+			background: $theme-color;
+			svg {
+				path {
+					fill: #fff;
+				}
+			}
+		}
+	}
+}
+
+.header-area.sticky-header {
+	position: fixed;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #fff;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.header-area.sticky-header .header-top {
+	display: none !important;
+}

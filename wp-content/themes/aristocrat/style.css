@@ -1,0 +1,77 @@
+/*!
+Theme Name: Aristocrat
+Theme URI: http://underscores.me/
+Author: Ashraful Oli
+Author URI: http://ashrafuloli.com/
+Description: Aristocrat Custom Theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: aristocrat
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Aristocrat is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+.widget-wrap .widget-title{
+	color: #222;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+.blog-box-wrap .blog-box-details .blog-box-title h3 a{
+	color: #222;
+}
+
+.blog-box-wrap .blog-box-details .blog-box-content .read-more-btn{
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #222;
+}
+
+.blog-box-wrap .blog-box-details .blog-box-content .read-more-btn:hover{
+	color: #cd232a;
+}
+
+.blog-box-wrap .blog-box-details .blog-box-content .read-more-btn i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background: #222;
+}
+
+.widget-wrap ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.widget-wrap ul li {
+	display: block;
+	font-size: 16px;
+	line-height: 26px;
+	color: #222;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.widget-wrap ul li:hover a {
+	color: #222;
+}
+.widget-wrap ul li:hover:before {
+	margin-right: 13px;
+}
+.widget-wrap ul li a {
+	color: #09316f;
+	margin-right: 10px;
+}
